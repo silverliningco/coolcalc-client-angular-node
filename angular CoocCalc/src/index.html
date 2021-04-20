@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AdminPro</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-client_id" content="1045072534136-oqkjcjvo449uls0bttgvl3aejelh22f5.apps.googleusercontent.com">
+  
+  <script src="https://apis.google.com/js/platform.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- You can change the theme colors from here -->
+  <link id="theme" rel="stylesheet">
+
+  
+<!-- ============================================================== -->
+<!-- Coolcalc -->
+<!-- ============================================================== -->
+
+  <!--- Leaflet CSS. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+
+  <!--- Styles for Leaflet geoman-io plugin. -->
+  <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />
+
+  <!--- Styles for Leaflet.Measure.Path plugin. -->
+  <link rel="stylesheet" href="https://cdn.coolcalc.com/leaflet-measure-path/leaflet-measure-path.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <!--- CoolCalc REST UI styles (personaliza os colores para el usuario)-->
+  <link rel="stylesheet" href="https://cdn.coolcalc.com/css/mj8/v-bootstrap/staging/restui.css">
+
+
+  <!--- Additional CoolCalc styles for printable MJ8 report. (verificar si esta bien aqui)-->
+  <link rel="stylesheet" href="https://cdn.coolcalc.com/css/mj8/v-bootstrap/staging/print.css">
+
+<!-- ============================================================== -->
+<!-- End Coolcalc -->
+<!-- ============================================================== -->
+
+
+
+
+</head>
+<body class="fix-header card-no-border fix-sidebar">
+
+  <!-- ============================================================== -->
+  <!-- Preloader - style you can find in spinners.css -->
+  <!-- ============================================================== -->
+  <div class="preloader">
+    <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">Admin Pro</p>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- Main wrapper - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+
+  <app-root></app-root>
+
+
+  <!-- ============================================================== -->
+  <!-- All Jquery -->
+  <!-- ============================================================== -->
+  <script src="./assets/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tether Core JavaScript -->
+  <script src="./assets/plugins/bootstrap/js/popper.min.js"></script>
+  <script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- slimscrollbar scrollbar JavaScript -->
+  <script src="./assets/js/perfect-scrollbar.jquery.min.js"></script>
+  <!--Wave Effects -->
+  <script src="./assets/js/waves.js"></script>
+  <!--Menu sidebar -->
+  <script src="./assets/js/sidebarmenu.js"></script>
+  <!--stickey kit -->
+  <script src="./assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+  <script src="./assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+  <!--Custom JavaScript -->
+  <script src="./assets/js/custom.js"></script>
+  
+  <!-- Chartjs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+
+  <!-- ============================================================== -->
+  <!-- Coolcalc -->
+  <!-- ============================================================== -->
+
+    <!--- Google maps library. --> 
+    <script src="https://maps.googleapis.com/maps/api/js?libraries="></script>
+
+    <!--- Google charts library. -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Leaflet. -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <!-- Leaflet.GridLayer.GoogleMutant -->
+    <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js'></script>
+
+    <!-- Leaflet geoman-io plugin. -->
+    <script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script>
+
+    <!-- Leaflet.Measure.Path-->
+    <script src="https://cdn.coolcalc.com/leaflet-measure-path/leaflet-measure-path.js"></script>
+
+    <!--Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!--- KhipuJS REST client JavaScript library. -->
+    <script src="https://cdn.coolcalc.com/khipu-js/staging/khipu.js"></script>
+
+    <!-- Map trace library -->
+    <script src="https://cdn.coolcalc.com/javascript/map-trace/staging/mt-widget.js"></script>
+
+    <!--- CoolCalc MJ8 JavaScript library. -->
+    <script src="https://cdn.coolcalc.com/javascript/mj8/shared/staging/mj8.js"></script>
+    <script src="https://cdn.coolcalc.com/javascript/mj8/v-bootstrap/staging/tools.js"></script>
+
+    <!--- Khipu callbacks, these may be framework dependent so we separate them from the main JavaScript library. -->
+    <script src="https://cdn.coolcalc.com/khipu-callbacks/mj8/v-bootstrap/staging/khipu-callbacks.js"></script>
+
+    <!--- Local JavaScript to initialize the CoolCalc application. (ver que hacen estos 2 archivos)-->
+    <script type="text/javascript" src="./assets/coolcalc/javascript/libmj8.js" ></script>
+    <script type="text/javascript" src="./assets/coolcalc/javascript/fun-factory.js" ></script>
+
+  <!-- ============================================================== -->
+  <!-- End Coolcalc -->
+  <!-- ============================================================== -->
+
+</body>
+</html>

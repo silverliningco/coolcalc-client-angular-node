@@ -1,0 +1,9 @@
+{
+    "*": {
+        "target": "https://localhost:3000",
+        "protocol": "https:",
+        "port": 4200,
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
